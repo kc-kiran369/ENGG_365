@@ -6,7 +6,7 @@ namespace ClassroomManagement
     static class MainApplication
     {
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

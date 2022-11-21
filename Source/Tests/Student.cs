@@ -2,7 +2,7 @@
 
 namespace ClassroomManagement.Tests
 {
-    class Student
+    internal class Student
     {
         public string Name { get; private set; }
         public int Rollno { get; private set; }

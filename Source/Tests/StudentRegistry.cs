@@ -25,14 +25,17 @@ namespace ClassroomManagement.Tests
         public void AddStudent()
         {
             m_Students.Add(new Student());
+            OnStudentAdd();
         }
         public void OnStudentAdd()
         {
             //todo : update ui
+            
         }
         public void RemoveStudent(int index)
         {
             m_Students.RemoveAt(index);
+            OnStudentRemove();
         }
         public void OnStudentRemove()
         {
