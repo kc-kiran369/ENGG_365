@@ -29,6 +29,7 @@ namespace ClassroomManagement.Home
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.DashboardPanel = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDashboard = new System.Windows.Forms.Button();
@@ -37,10 +38,10 @@ namespace ClassroomManagement.Home
             this.btnAdmission = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSettings = new System.Windows.Forms.Button();
-            this.SchoolNamePanel = new System.Windows.Forms.Panel();
             this.MainContentPanel = new System.Windows.Forms.Panel();
-            this.SchoolNameLabel = new System.Windows.Forms.Label();
+            this.SchoolNamePanel = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.SchoolNameLabel = new System.Windows.Forms.Label();
             this.dashboardUserControl1 = new ClassroomManagement.Designs.DashboardUserControl();
             this.settingsUserControl1 = new ClassroomManagement.Designs.SettingsUserControl();
             this.admissionUserControl1 = new ClassroomManagement.Designs.AdmissionUserControl();
@@ -51,13 +52,13 @@ namespace ClassroomManagement.Home
             this.DashboardPanel.Panel2.SuspendLayout();
             this.DashboardPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.SchoolNamePanel.SuspendLayout();
             this.MainContentPanel.SuspendLayout();
+            this.SchoolNamePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // DashboardPanel
             // 
-            this.DashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(221)))), ((int)(((byte)(225)))));
+            this.DashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.DashboardPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DashboardPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashboardPanel.Location = new System.Drawing.Point(0, 0);
@@ -65,7 +66,7 @@ namespace ClassroomManagement.Home
             // 
             // DashboardPanel.Panel1
             // 
-            this.DashboardPanel.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.DashboardPanel.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.DashboardPanel.Panel1.Controls.Add(this.tableLayoutPanel1);
             this.DashboardPanel.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DashboardPanel.Panel1MinSize = 50;
@@ -106,7 +107,7 @@ namespace ClassroomManagement.Home
             // 
             // btnDashboard
             // 
-            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -114,19 +115,21 @@ namespace ClassroomManagement.Home
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Tahoma", 13F);
             this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(221)))), ((int)(((byte)(225)))));
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.Location = new System.Drawing.Point(0, 48);
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(0);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(166, 48);
             this.btnDashboard.TabIndex = 0;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.Text = " Dashboard";
+            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnStudents
             // 
-            this.btnStudents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.btnStudents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.btnStudents.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnStudents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnStudents.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -134,19 +137,22 @@ namespace ClassroomManagement.Home
             this.btnStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStudents.Font = new System.Drawing.Font("Tahoma", 13F);
             this.btnStudents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(221)))), ((int)(((byte)(225)))));
+            this.btnStudents.Image = ((System.Drawing.Image)(resources.GetObject("btnStudents.Image")));
+            this.btnStudents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStudents.Location = new System.Drawing.Point(0, 96);
             this.btnStudents.Margin = new System.Windows.Forms.Padding(0);
             this.btnStudents.Name = "btnStudents";
             this.btnStudents.Size = new System.Drawing.Size(166, 48);
             this.btnStudents.TabIndex = 1;
-            this.btnStudents.Text = "Students";
+            this.btnStudents.Text = " Students";
             this.btnStudents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStudents.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStudents.UseVisualStyleBackColor = false;
             this.btnStudents.Click += new System.EventHandler(this.btnStudents_Click);
             // 
             // btnAttendance
             // 
-            this.btnAttendance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.btnAttendance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.btnAttendance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAttendance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAttendance.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -154,19 +160,22 @@ namespace ClassroomManagement.Home
             this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAttendance.Font = new System.Drawing.Font("Tahoma", 13F);
             this.btnAttendance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(221)))), ((int)(((byte)(225)))));
+            this.btnAttendance.Image = ((System.Drawing.Image)(resources.GetObject("btnAttendance.Image")));
+            this.btnAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAttendance.Location = new System.Drawing.Point(0, 144);
             this.btnAttendance.Margin = new System.Windows.Forms.Padding(0);
             this.btnAttendance.Name = "btnAttendance";
             this.btnAttendance.Size = new System.Drawing.Size(166, 48);
             this.btnAttendance.TabIndex = 2;
-            this.btnAttendance.Text = "Attendance";
+            this.btnAttendance.Text = " Attendance";
             this.btnAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAttendance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAttendance.UseVisualStyleBackColor = false;
             this.btnAttendance.Click += new System.EventHandler(this.btnAttendance_Click);
             // 
             // btnAdmission
             // 
-            this.btnAdmission.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.btnAdmission.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.btnAdmission.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAdmission.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdmission.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -174,23 +183,26 @@ namespace ClassroomManagement.Home
             this.btnAdmission.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdmission.Font = new System.Drawing.Font("Tahoma", 13F);
             this.btnAdmission.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(221)))), ((int)(((byte)(225)))));
+            this.btnAdmission.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmission.Image")));
+            this.btnAdmission.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdmission.Location = new System.Drawing.Point(0, 192);
             this.btnAdmission.Margin = new System.Windows.Forms.Padding(0);
             this.btnAdmission.Name = "btnAdmission";
             this.btnAdmission.Size = new System.Drawing.Size(166, 48);
             this.btnAdmission.TabIndex = 3;
-            this.btnAdmission.Text = "Admission";
+            this.btnAdmission.Text = " Admission";
             this.btnAdmission.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdmission.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdmission.UseVisualStyleBackColor = false;
             this.btnAdmission.Click += new System.EventHandler(this.btnAdmission_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label1.Font = new System.Drawing.Font("Vermin Vibes", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(148)))), ((int)(((byte)(89)))));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 48);
@@ -200,32 +212,25 @@ namespace ClassroomManagement.Home
             // 
             // btnSettings
             // 
-            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSettings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Tahoma", 13F);
             this.btnSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(221)))), ((int)(((byte)(225)))));
+            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnSettings.Location = new System.Drawing.Point(0, 240);
             this.btnSettings.Margin = new System.Windows.Forms.Padding(0);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(166, 54);
             this.btnSettings.TabIndex = 5;
-            this.btnSettings.Text = "Settings";
+            this.btnSettings.Text = " Settings";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSettings.UseVisualStyleBackColor = false;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
-            // 
-            // SchoolNamePanel
-            // 
-            this.SchoolNamePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
-            this.SchoolNamePanel.Controls.Add(this.label3);
-            this.SchoolNamePanel.Controls.Add(this.SchoolNameLabel);
-            this.SchoolNamePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SchoolNamePanel.Location = new System.Drawing.Point(0, 0);
-            this.SchoolNamePanel.Name = "SchoolNamePanel";
-            this.SchoolNamePanel.Size = new System.Drawing.Size(636, 63);
-            this.SchoolNamePanel.TabIndex = 0;
             // 
             // MainContentPanel
             // 
@@ -240,32 +245,44 @@ namespace ClassroomManagement.Home
             this.MainContentPanel.Size = new System.Drawing.Size(636, 389);
             this.MainContentPanel.TabIndex = 1;
             // 
-            // SchoolNameLabel
+            // SchoolNamePanel
             // 
-            this.SchoolNameLabel.AutoSize = true;
-            this.SchoolNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SchoolNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.SchoolNameLabel.Location = new System.Drawing.Point(1, 12);
-            this.SchoolNameLabel.Name = "SchoolNameLabel";
-            this.SchoolNameLabel.Size = new System.Drawing.Size(325, 25);
-            this.SchoolNameLabel.TabIndex = 0;
-            this.SchoolNameLabel.Text = "Brahma Rupa Secondary School";
-            this.SchoolNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SchoolNamePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.SchoolNamePanel.Controls.Add(this.label3);
+            this.SchoolNamePanel.Controls.Add(this.SchoolNameLabel);
+            this.SchoolNamePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SchoolNamePanel.Location = new System.Drawing.Point(0, 0);
+            this.SchoolNamePanel.Name = "SchoolNamePanel";
+            this.SchoolNamePanel.Size = new System.Drawing.Size(636, 63);
+            this.SchoolNamePanel.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(148)))), ((int)(((byte)(89)))));
             this.label3.Location = new System.Drawing.Point(3, 37);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(170, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Rajakochautara, Pokhara-32";
             // 
+            // SchoolNameLabel
+            // 
+            this.SchoolNameLabel.AutoSize = true;
+            this.SchoolNameLabel.Font = new System.Drawing.Font("Open Sans Medium", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SchoolNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(148)))), ((int)(((byte)(89)))));
+            this.SchoolNameLabel.Location = new System.Drawing.Point(1, 12);
+            this.SchoolNameLabel.Name = "SchoolNameLabel";
+            this.SchoolNameLabel.Size = new System.Drawing.Size(336, 28);
+            this.SchoolNameLabel.TabIndex = 0;
+            this.SchoolNameLabel.Text = "Brahma Rupa Secondary School";
+            this.SchoolNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // dashboardUserControl1
             // 
             this.dashboardUserControl1.AutoSize = true;
+            this.dashboardUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.dashboardUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardUserControl1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashboardUserControl1.Location = new System.Drawing.Point(0, 0);
@@ -306,6 +323,7 @@ namespace ClassroomManagement.Home
             // 
             // studentsUserControl1
             // 
+            this.studentsUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.studentsUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.studentsUserControl1.Location = new System.Drawing.Point(0, 0);
             this.studentsUserControl1.Margin = new System.Windows.Forms.Padding(1);
@@ -320,7 +338,6 @@ namespace ClassroomManagement.Home
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(804, 452);
             this.Controls.Add(this.DashboardPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
             this.Name = "Home";
             this.ShowIcon = false;
@@ -333,10 +350,10 @@ namespace ClassroomManagement.Home
             this.DashboardPanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.SchoolNamePanel.ResumeLayout(false);
-            this.SchoolNamePanel.PerformLayout();
             this.MainContentPanel.ResumeLayout(false);
             this.MainContentPanel.PerformLayout();
+            this.SchoolNamePanel.ResumeLayout(false);
+            this.SchoolNamePanel.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -54,6 +54,7 @@ namespace ClassroomManagement.Designs
             // 
             // Class09Page
             // 
+            this.Class09Page.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.Class09Page.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Class09Page.Location = new System.Drawing.Point(4, 25);
             this.Class09Page.Margin = new System.Windows.Forms.Padding(0);
@@ -61,7 +62,6 @@ namespace ClassroomManagement.Designs
             this.Class09Page.Size = new System.Drawing.Size(798, 446);
             this.Class09Page.TabIndex = 0;
             this.Class09Page.Text = "Class 9";
-            this.Class09Page.UseVisualStyleBackColor = true;
             // 
             // Class10Page
             // 
@@ -97,6 +97,7 @@ namespace ClassroomManagement.Designs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.Controls.Add(this.tabControl1);
             this.Name = "StudentsUserControl";
             this.Size = new System.Drawing.Size(806, 475);

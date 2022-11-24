@@ -19,7 +19,7 @@ namespace ClassroomManagement.Home
         {
             InitializeComponent();
             BringDashboardToFrontByDefault();
-            SQLConnector.Instance.Insert("Kikran", "KC");
+            //SQLConnector.Instance.Insert("Kikran", "KC");
         }
         void BringDashboardToFrontByDefault()
         {

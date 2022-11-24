@@ -8,7 +8,7 @@ namespace ClassroomManagement.DataBase
     class SQLConnector
     {
         public static readonly SQLConnector Instance = new SQLConnector();
-        string m_ConnectionString = @"Server=localhost\MariaDB;Database=mydatabase;Integrated Security=SSPI";
+        string m_ConnectionString = @"Server=localhost;Database=mydatabase;Integrated Security=SSPI";
         public SQLConnector()
         {
 
